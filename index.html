@@ -1,113 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WeatherAPP</title>
     <script src="https://cdn.tailwindcss.com"></script>
-
 </head>
-<body class="bg-[url('Assets/image/Background.jpg')]">
-    <main class=" flex">
 
-        <div class="">
-            <div>
-                <h2>Beni Mellal</h2>
+<body class="bg-[url('Assets/image/Background.jpg')] bg-cover bg-center">
+    <main class="flex flex-col md:flex-row justify-around items-center min-h-screen">
+        
+        <div class="flex flex-col items-center justify-around h-auto md:h-96 mb-10 md:mb-0">
+            <div class="text-4xl md:text-5xl text-white">
+                <p class="font-bold">Beni Mellal</p>
             </div>
-    
-            <div>
-                <h2>12°</h2>
+            <div class="text-5xl md:text-6xl text-white">
+                <p class="font-bold">12°</p>
             </div>
         </div>
 
-        <div class="bg-[#18153D] opacity-80 p-8 ml-[50%] mr-[10%] rounded-[20px]">
-
-            <div class="flex justify-around ">
-                <div class="text-white"> Today</div>
-                <div class="text-white"> 5 days Previous</div>
+        
+        <div class="bg-[#18153D] bg-opacity-80 m-4 w-[90%] md:w-[700px] h-auto md:h-[500px] rounded-[20px] p-6">
+           
+            <div class="text-white text-lg md:text-xl mb-4">
+                <p class="font-bold">5 Days Previous</p>
             </div>
 
-                <div class="flex gap-8 my-8 "> 
-                    <div class="bg-white rounded-lg w-[60px] h-[100px] text-center">
-                        <img class="max-w-[50%] max-h-[50%]  bg-center" src="Assets/icone/sun.png" alt="Weather">
-                        <p>00:00</p>
-                        <p>12°</p>
-                    </div>
-                    <div class="bg-white rounded-lg w-[60px] h-[100px] text-center">
-                        <img class="max-w-[30%] max-h-[30%]" src="Assets/icone/sun.png" alt="Weather">                   
-                        <p>00:00</p>
-                        <p>12°</p>
-                    </div>
-                    <div class="bg-white rounded-lg w-[60px] h-[100px] text-center">
-                        <img class="max-w-[30%] max-h-[30%]" src="Assets/icone/sun.png" alt="Weather">                   
-                        <p>00:00</p>
-                        <p>12°</p>
-                    </div>
-                        <div class="bg-white rounded-lg w-[60px] h-[100px] text-center">
-                        <img class="max-w-[30%] max-h-[30%]" src="Assets/icone/sun.png" alt="Weather">                   
-                        <p>00:00</p>
-                        <p>12°</p>
-                    </div>
-                        <div class="bg-white rounded-lg w-[60px] h-[100px] text-center">
-                        <img class="max-w-[30%] max-h-[30%]" src="Assets/icone/sun.png" alt="Weather">                   
-                        <p>00:00</p>
-                        <p>12°</p>
-                    </div>
+            <div class="flex flex-wrap justify-center gap-6 mb-8">
+                <div class="bg-white rounded-lg w-[70px] h-[120px] md:w-[80px] md:h-[150px] text-center pt-2">
+                    <img class="max-w-[70%] mx-auto" src="Assets/icone/sun.png" alt="Weather">
+                    <p class="text-sm md:text-base">00:00</p>
+                    <p class="text-sm md:text-base">12°</p>
                 </div>
-
-                <div class="flex gap-8">
-                        <div>
-                            <div class="bg-white rounded-lg w-[60px] h-[100px] text-center">
-
-                                <img class="max-w-[50%] max-h-[50%]" src="Assets/icone/sun.png" alt="Weather">
-                                <p>Lundi</p>
-                                <p>00:00</p>
-                                <p>12°</p>
-
-                            </div>
-                        </div>
-                    <div>
-                    <div class="bg-white rounded-lg w-[60px] h-[100px] text-center">
-
-                        <img class="max-w-[15%] max-h-[15%]" src="Assets/icone/sun.png" alt="Weather">
-                        <p>Lundi</p>
-                        <p>00:00</p>
-                        <p>12°</p>
-
-                    </div>
+                <div class="bg-white rounded-lg w-[70px] h-[120px] md:w-[80px] md:h-[150px] text-center pt-2">
+                    <img class="max-w-[70%] mx-auto" src="Assets/icone/sun.png" alt="Weather">
+                    <p class="text-sm md:text-base">00:00</p>
+                    <p class="text-sm md:text-base">12°</p>
                 </div>
-                <div>
-                    <div class="bg-white rounded-lg w-[60px] h-[100px] text-center">
-
-                        <img class="max-w-[15%] max-h-[15%]" src="Assets/icone/sun.png" alt="Weather">
-                        <p>Lundi</p>
-                        <p>00:00</p>
-                        <p>12°</p>
-
-                    </div>
+                <div class="bg-white rounded-lg w-[70px] h-[120px] md:w-[80px] md:h-[150px] text-center pt-2">
+                    <img class="max-w-[70%] mx-auto" src="Assets/icone/sun.png" alt="Weather">
+                    <p class="text-sm md:text-base">00:00</p>
+                    <p class="text-sm md:text-base">12°</p>
                 </div>
-                <div>
-                    <div class="bg-white rounded-lg w-[60px] h-[100px] text-center">
-
-                        <img class="max-w-[15%] max-h-[15%]" src="Assets/icone/sun.png" alt="Weather">
-                        <p>Lundi</p>
-                        <p>00:00</p>
-                        <p>12°</p>
-
-                    </div>
+                <div class="bg-white rounded-lg w-[70px] h-[120px] md:w-[80px] md:h-[150px] text-center pt-2">
+                    <img class="max-w-[70%] mx-auto" src="Assets/icone/sun.png" alt="Weather">
+                    <p class="text-sm md:text-base">00:00</p>
+                    <p class="text-sm md:text-base">12°</p>
                 </div>
-                <div>
-                    <div class="bg-white rounded-lg w-[60px] h-[100px] text-center">
+                <div class="bg-white rounded-lg w-[70px] h-[120px] md:w-[80px] md:h-[150px] text-center pt-2">
+                    <img class="max-w-[70%] mx-auto" src="Assets/icone/sun.png" alt="Weather">
+                    <p class="text-sm md:text-base">00:00</p>
+                    <p class="text-sm md:text-base">12°</p>
+                </div>
+            </div>
 
-                        <img class="max-w-[15%] max-h-[15%]" src="Assets/icone/sun.png" alt="Weather">
-                        <p>Lundi</p>
-                        <p>00:00</p>
-                        <p>12°</p>
-
-                    </div>
+            <div class="bg-white rounded-lg flex flex-wrap justify-around items-center p-4 gap-4">
+                <div class="w-[60px] h-[110px] md:w-[80px] md:h-[150px] text-center">
+                    <img class="max-w-[70%] mx-auto" src="Assets/icone/sun.png" alt="Weather">
+                    <p class="text-sm md:text-base">Lundi</p>
+                    <p class="text-sm md:text-base">00:00</p>
+                    <p class="text-sm md:text-base">12°</p>
+                </div>
+                <div class="w-[60px] h-[110px] md:w-[80px] md:h-[150px] text-center">
+                    <img class="max-w-[70%] mx-auto" src="Assets/icone/sun.png" alt="Weather">
+                    <p class="text-sm md:text-base">Mardi</p>
+                    <p class="text-sm md:text-base">00:00</p>
+                    <p class="text-sm md:text-base">12°</p>
+                </div>
+                <div class="w-[60px] h-[110px] md:w-[80px] md:h-[150px] text-center">
+                    <img class="max-w-[70%] mx-auto" src="Assets/icone/sun.png" alt="Weather">
+                    <p class="text-sm md:text-base">Mercredi</p>
+                    <p class="text-sm md:text-base">00:00</p>
+                    <p class="text-sm md:text-base">12°</p>
+                </div>
+                <div class="w-[60px] h-[110px] md:w-[80px] md:h-[150px] text-center">
+                    <img class="max-w-[70%] mx-auto" src="Assets/icone/sun.png" alt="Weather">
+                    <p class="text-sm md:text-base">Jeudi</p>
+                    <p class="text-sm md:text-base">00:00</p>
+                    <p class="text-sm md:text-base">12°</p>
+                </div>
+                <div class="w-[60px] h-[110px] md:w-[80px] md:h-[150px] text-center">
+                    <img class="max-w-[70%] mx-auto" src="Assets/icone/sun.png" alt="Weather">
+                    <p class="text-sm md:text-base">Vendredi</p>
+                    <p class="text-sm md:text-base">00:00</p>
+                    <p class="text-sm md:text-base">12°</p>
                 </div>
             </div>
         </div>
     </main>
 </body>
+
 </html>
