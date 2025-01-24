@@ -70,18 +70,19 @@
 
 // const apiUrl =  "https://api.openweathermap.org/data/2.5/weather?&appid=&units=metric&q=bangalore";
 
+const apiKey = "8da7c956655b0fd0fa9d9558fd8feac3";
+
+const apiUrl=  `https://api.openweathermap.org/data/2.5/weather?q=`
 
 const searchBox = document.getElementById("search");
-const searchBtn = document.getElementById("btn");
-console.log(searchBtn)
+const searchBtn = document.getElementById("youssef");
+// console.log(searchBtn)
 
 async function checkWeather(city) {
-    const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
+    const response = await fetch(apiUrl + city + '&units=metric&appid=' + apiKey );
     var data = await response.json();
-    console.log(data.weather)
     document.getElementById("city").innerHTML = data.name;
-   
-    document.getElementById("temperat").innerHTML = Math.round(data.main.temp) + "°C";
+    document.getElementById("degree").innerHTML = data.main.temp + "°C";
 }
 
 searchBtn.addEventListener("click", () => {
